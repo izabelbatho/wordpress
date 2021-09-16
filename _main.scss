@@ -1,0 +1,195 @@
+body{
+    
+    font-family: 'lato';
+    line-height: 35px;
+    min-height: 100%;
+    margin: auto;
+    background-color: #fff;
+   
+}
+.site{
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.site-header{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    
+        
+    .main-navigation{
+        display: flex;
+        flex-direction: column;
+        .menu-toggle{
+            background: none;
+            border: none;
+            position: absolute;
+            top: 15px;
+            right: 0;
+
+        }
+        a{
+            margin-left: 15px;
+            color: $font-color;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
+            &:hover{
+                text-decoration: underline;
+            }
+            
+        }
+    }
+}
+//Typografi
+h1{
+    font-size: 50px;
+    line-height: 60px;
+    color:#333;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+
+}
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    color: #333;
+}
+a{
+    color: $a-color;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+//mobil view
+
+@media screen and (min-width: 991px){
+  
+    .site-header{
+     flex-direction: row;
+ 
+         .main-navigation{
+             flex-direction: row;
+             justify-content: flex-end;
+             align-items: center;
+        
+         }
+ 
+     }
+     .field{
+         width: 100%;
+
+     }
+     .kolonne-2{
+         width: 33%;
+     }
+ }
+
+ .bytplads{
+    order: 1;
+   }
+
+ @media screen and (max-width: 479px){
+     .custom-logo{
+         width: 50%;
+         margin: auto;
+         size: 50px;
+        }       
+
+         
+     
+     
+
+   
+    a{
+         font-weight: 600;
+            
+        }
+ // 2 kolonner af billeder i responsiv
+    .client{
+        width: 50%;
+        
+
+    }
+     
+        
+     h1{
+         font-size: 30px;
+         line-height: 40px;
+         font-weight: 900;
+        }
+     h2{
+         font-size: 30px;
+         font-weight: 600;
+
+        }
+     h1,h2,p{
+         text-align: center;
+        }
+    }
+
+ //css til kontaktsiden
+
+ .kontakt{
+    text-align: left;
+    margin-bottom: -20px;
+ }
+#select{
+    width: 100%;
+    padding: 8 12;
+    background-color: #f9f9f9;
+    margin: 0 0 10;
+}
+
+ .w-input{
+     width: 100%;
+     background-color: #f9f9f9;
+     margin: 0 0 10;
+     padding: 8 12;
+
+
+ }
+.required{
+    color: red;
+}
+.button{
+    background-color: $a-color;    
+    margin-top: 30px;
+    size: 30px;
+}
+//Styling af kontaktformular i footer
+.field{
+    width: 100%;
+
+}
+.input{
+    width: 25%;
+
+}
+//styling af links i footer
+.a-footer{
+    .link{
+        margin-left: 5px;
+    }
+    p{
+        font-size: 12px;
+    }
+    a{
+        font-size: 12px;
+    }
+    
+
+}
+@media screen and (max-width: 991px) {
+    .client{
+        width: 33.33%;
+        margin: auto;
+
+    }
+    
+}
